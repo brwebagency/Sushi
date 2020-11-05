@@ -1,0 +1,516 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(223, 225, 245);
+}
+
+body, #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+/* The whole container */
+.App {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 50px;
+    padding: 50px 7.5% 50px 7.5%;
+
+    background: rgb(240, 245, 255);
+
+    border: 5px solid white;
+    border-radius: 50px;
+
+    box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* First offer with View Menu button */
+.first_offer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    background-image: url(img/bg/fudzhiyama.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 62.5%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 33%;
+    min-width: 225px;
+    max-width: 325px;
+    height: 425px;
+    padding: 20px;
+}
+
+.description h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.description p {
+    margin-top: 20px;
+    margin-left: 2.5px;
+    
+    font-size: 14px;
+    color: rgb(165, 165, 180);
+}
+
+.description .link {
+    width: 175px;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.description .active {
+    width: 175px;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.description .view-menu {
+    cursor: pointer;
+
+    width: 175px;
+    height: 40px;
+
+    border-radius: 25px;
+    box-shadow: 0px 30px 50px 10px rgba(0, 0, 0, .2);
+
+    background: black;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+/* Second offer with rolls */
+.second_offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 50px;
+}
+
+.rolls_holder {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Roll card */
+.card {
+    width: 200px;
+    height: 250px;
+    margin-right: 50px;
+    
+    background: linear-gradient(170deg, rgb(240, 245, 255) 25%, rgb(255, 255, 255));
+
+    border-radius: 50px;
+    box-shadow: 20px 45px 50px 0 rgba(15, 15, 60, .1);
+}
+
+.roll {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: -70px;
+}
+
+.roll .img-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.roll img {
+    width: 175px;
+    height: 175px;
+}
+
+.roll h3 {
+    font-size: 20px;
+}
+
+.roll .price {
+    margin-top: 10px;
+}
+
+.roll .add {
+    cursor: pointer;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    top: 25px;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    background: black;
+    color: white;
+
+    border-radius: 50px;
+}
+
+
+
+/* Text block */
+.block_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 415px;
+    min-width: 300px;
+    width: 40%;
+    padding: 20px;
+}
+
+.block_text p {
+    font-size: 14px;
+    color: rgb(165, 165, 180);
+    margin-top: 20px;
+}
+
+
+
+/* Third offer */
+.third_offer {
+    display: flex;
+    width: 100%;
+    height: 325px;
+    margin-top: 50px;
+    background-image: url(img/bg/roll_plate.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 52.5%;
+}
+
+
+
+/* Fourth Offer */
+.fourth_offer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+
+    background-image: url(img/bg/black_plate.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 67.5%;
+}
+
+.fourth_offer .block_text {
+    max-width: 415px;
+    min-width: 240px;
+}
+
+
+
+/* Reserving */
+.reserving {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 175px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.reserving .content_holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reserve_offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 50px; */
+}
+
+.reserve_offer p {
+    font-size: 12px;
+}
+
+.reserving .content_holder .contact_us {
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 13px;
+
+    min-width: 120px;
+    width: 150px;
+    height: 35px;
+
+    border-radius: 25px;
+    box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, .2);
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 15px 0 15px 0;
+    background: rgb(205, 210, 215);
+}
+
+.reserving .text {
+    color: rgb(165, 165, 180);
+    font-size: 14px;
+    padding-right: 25%;
+}
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer div {
+    padding: 20px;
+}
+
+.footer ul {
+    padding: 0;
+    margin-top: 25px;
+}
+
+.footer li {
+    font-size: 14px;
+}
+
+.footer .regular li {
+    margin-bottom: 15px;
+}
+
+.footer .non-regular li {
+    margin-bottom: 10px;
+}
+
+
+
+/* Adaptation for tablets */
+@media all and (max-width: 1156px) {
+    .first_offer {
+        height: 450px;
+    }
+
+    .fourth_offer {
+        height: 375px;
+    }
+}
+
+@media all and (min-width: 850px)
+           and (max-width: 1000px) {
+    .App {
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .App {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .second_offer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .second_offer .card {
+        margin: 0;
+    }
+
+    .second_offer .rolls_holder {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .second_offer .block_text {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+}
+
+
+/* Apaptation for mobile devices */
+@media all and (max-width: 700px) {
+    .App {
+        padding: 2%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .App {
+        padding: 0;
+    }
+
+    
+    .first_offer {
+        justify-content: center;
+        background: none;
+        height: 400px;
+    }
+
+    .first_offer .description {
+        width: 100%;
+        max-width: 450px;
+    }
+
+
+    .second_offer .block_text {
+        max-width: 450px;
+    }
+
+
+    .third_offer {
+        justify-content: center;
+        align-items: flex-end;
+        height: 425px;
+        margin: 0;
+
+        background-position: center top;
+        background-size: 52.5%;
+    }
+
+    .third_offer .block_text {
+        height: 250px;
+        width: 100%;
+        max-width: 450px;
+    }
+
+
+    .fourth_offer {
+        justify-content: center;
+        align-items: flex-end;
+        height: 500px;
+        margin: 0;
+
+        background-position: center top;
+        background-size: 70%;
+    }
+
+    .fourth_offer .block_text {
+        height: 300px;
+        width: 100%;
+        max-width: 450px;
+    }
+
+
+    .reserving {
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .reserving_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        height: 100%;
+        max-width: 450px;
+        padding: 20px;
+    }
+
+    .content_holder {
+        width: 100%;
+    }
+
+    .reserve_offer h2 {
+        width: 90%;
+    }
+
+    .reserving .text {
+        padding: 0;
+    }
+
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: 435px) {
+    .rolls_holder {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rolls_holder .card:first-child {
+        margin-bottom: 100px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .rolls_holder {
+        margin-top: 25px;
+    }
+
+    .third_offer {
+        margin-top: 75px;
+        height: 350px;
+    }
+
+    .fourth_offer {
+        margin-top: 75px;
+        height: 450px;
+    }
+
+    .reserving {
+        margin-top: 25px;
+        height: 350px;
+    }
+}

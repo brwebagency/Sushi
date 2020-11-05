@@ -1,0 +1,13 @@
+.anim-main-page-appear {
+    transition: transform 1.25s, opacity 1.25s;
+    opacity: 0;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    will-change: transform opacity;
+}
+
+.anim-main-page-appear-active {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
