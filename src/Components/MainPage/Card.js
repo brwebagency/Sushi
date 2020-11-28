@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Roll(props) {
+export default function Card(props) {
     return(
         <div className="card">
             <div className="roll">

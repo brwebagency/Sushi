@@ -3,7 +3,9 @@ import { CSSTransition } from "react-transition-group";
 import FirstBlock from "./FirstBlock";
 import RollHolder from "./Holders/RollHolder";
 import SushiHolder from "./Holders/SushiHolder";
-import SwitchTab from "../scripts/SwitchTab";
+import SoupHolder from "./Holders/SoupHolder";
+import WokHolder from "./Holders/WokHolder";
+import SwitchTab from "../../scripts/SwitchTab";
 
 export default class MenuPage extends React.Component {
     constructor(props) {
@@ -42,8 +44,8 @@ export default class MenuPage extends React.Component {
         const allTabs = {
             1: <RollHolder />,
             2: <SushiHolder />,
-            3: <RollHolder />,
-            4: <RollHolder />
+            3: <SoupHolder />,
+            4: <WokHolder />
         }
 
         let foodHandler = allTabs[this.state.id];

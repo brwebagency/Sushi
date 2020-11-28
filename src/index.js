@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './Components/App';
 import './MainStyle.css';
 import "./MenuStyle.css";
 import './anim.css';

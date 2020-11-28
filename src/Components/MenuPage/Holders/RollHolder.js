@@ -1,18 +1,18 @@
 import React from "react";
-import Roll from "../../MainPage/Roll";
+import Card from "../../MainPage/Card";
 
-import tikka_maki from "../../img/rolls/tikka_maki.png";
-import california from "../../img/rolls/california.png";
-import warriors from "../../img/rolls/warriors.png";
-import alaska from "../../img/rolls/alaska.png";
-import rock_and_roll from "../../img/rolls/rock_and_roll.png";
-import spicy_tuna from "../../img/rolls/spicy_tuna.png";
-import tempura_gimbap from "../../img/rolls/tempura_gimbap.png";
-import akashiro_roll from "../../img/rolls/akashiro_roll.png";
-import catterpillar_roll from "../../img/rolls/catterpillar_roll.png";
-import kibune_maffin from "../../img/rolls/kibune_maffin.png";
-import raiders_roll from "../../img/rolls/raiders_roll.png";
-import unagi_makizushi from "../../img/rolls/unagi_makizushi.png";
+import tikka_maki from "../../../img/rolls/tikka_maki.png";
+import california from "../../../img/rolls/california.png";
+import warriors from "../../../img/rolls/warriors.png";
+import alaska from "../../../img/rolls/alaska.png";
+import rock_and_roll from "../../../img/rolls/rock_and_roll.png";
+import spicy_tuna from "../../../img/rolls/spicy_tuna.png";
+import tempura_gimbap from "../../../img/rolls/tempura_gimbap.png";
+import akashiro_roll from "../../../img/rolls/akashiro_roll.png";
+import catterpillar_roll from "../../../img/rolls/catterpillar_roll.png";
+import kibune_maffin from "../../../img/rolls/kibune_maffin.png";
+import raiders_roll from "../../../img/rolls/raiders_roll.png";
+import unagi_makizushi from "../../../img/rolls/unagi_makizushi.png";
 
 export default function RollHolder() {
     let rolls = [
@@ -33,7 +33,7 @@ export default function RollHolder() {
     return (
         rolls.map(roll => {
             return (
-                <Roll img={roll.img} name={roll.name} description={roll.description} price={roll.price}/>
+                <Card img={roll.img} name={roll.name} description={roll.description} price={roll.price}/>
             );
         })
     );
